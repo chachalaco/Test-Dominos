@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="RegistroLoginS.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Registro y Login</title>
+  </head>
+
+  <body>
+    <header id="main-header">
+      <a id="logo-header" href="index.html">
+        <span class="site-name">Test de Dominos</span>
+        <div class="logo">
+          <img src="img/domino.png" />
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="SelecNivel.html">Seleccionar Modo</a></li>
+          <li><a href="Records.html">Resultados</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="login">
+      <div class="login1">
+        <header class="login__header">
+          <h2>Registro</h2>
+          <h4>¿Primera vez por aqui?</h4>
+        </header>
+
+        <form action="#" id="registerForm" class="login__form" method="POST">
+          <div>
+            <label for="text"><b>Nombre</b></label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div>
+            <label for="text"><b>Iniciales</b></label>
+            <input type="text" id="inicial" title="Solo letras mayúsculas" required />
+          </div>
+
+          <div>
+            <label for="date"><b>Fecha de Nacimiento</b></label>
+            <input type="date" id="fecha" name="Fecha" required />
+          </div>
+
+          <div>
+            <input class="button" type="submit" value="Sign In" />
+          </div>
+        </form>
+      </div>
+
+      <div class="login2">
+        <header class="login__header">
+          <h4>¿Ya estas registrado?</h4>
+          <h2>Iniciar Sesión</h2>
+        </header>
+
+        <form action="#" id="loginForm" class="login__form" method="POST">
+          <div>
+            <label for="text"><b>Nombre</b></label>
+            <input type="text" id="usuario" name="nombre" required />
+          </div>
+
+          <div>
+            <input class="button" type="submit" value="Login" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/Auth.js"></script>
+    <script src="js/AuthManager.js"></script>
+    <script>
+      checkLogin();
+    </script>
+  </body>
+</html>

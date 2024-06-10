@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/SelecNivel.css" />
+    <title>Registro y Login</title>
+  </head>
+
+  <body>
+    <header id="main-header">
+      <a id="logo-header">
+        <span class="site-name">Test de Dominos</span>
+        <div class="logo">
+          <img src="img/domino.png" />
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="SelecNivel.html">Seleccionar Modo</a></li>
+          <li><a href="Records.html">Resultados</a></li>
+          <li>
+            <button id="logoutBtn">Salir</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h1 align="center">Seleccionar Modo</h1>
+        <ul class="acorh">
+          <li><a href="juegotest.html">Juego</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/Auth.js"></script>
+    <script src="js/AuthManager.js"></script>
+    <script>
+      verifyLogin();
+    </script>
+  </body>
+</html>

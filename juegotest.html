@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Niveles.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Test de Dominos</title>
+  </head>
+
+  <body>
+    <header id="main-header">
+      <a id="logo-header">
+        <span class="site-name">Test de Dominos</span>
+        <div class="logo">
+          <img src="img/domino.png" />
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="SelecNivel.html">Seleccionar Modo</a></li>
+          <li><a href="Records.html">Resultados</a></li>
+          <li>
+            <button id="logoutBtn">Salir</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="dice-wrapper" id="dices">
+      </div>
+      <div class="dominosCenter">
+        <script src="js/test.js" defer></script>
+      </div>
+      <div class="navigator">
+        <!-- poner el boton -->
+      </div>
+    </div>
+    <p id="timer"></p>
+
+    <!--Script-->
+    <script src="js/Auth.js"></script>
+    <script src="js/AuthManager.js"></script>
+    <script>
+      verifyLogin();
+    </script>
+
+  </body>
+</html>
